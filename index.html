@@ -100,6 +100,7 @@
     }
     .nav-links {
       display: flex;
+      align-items: center;
       gap: 32px;
       font-size: 14px;
     }
@@ -1197,17 +1198,32 @@
       const initialDelay = 200;
       heading.innerHTML = "";
 
+      // Latin script (English) can safely animate letter-by-letter since each
+      // character is an independent glyph. Bengali and Arabic use connected/
+      // shaped scripts (conjuncts, matras, ligatures) that must stay together
+      // in the same box to render correctly, so those animate word-by-word.
+      const isShapedScript = lang === "bn" || lang === "ar";
+
       lines.forEach((line, lineIndex) => {
         const lineSpan = document.createElement("span");
         lineSpan.style.display = "block";
-        [...line].forEach((char, charIndex) => {
+
+        const units = isShapedScript ? line.split(" ") : [...line];
+
+        units.forEach((unit, unitIndex) => {
           const span = document.createElement("span");
           span.className = "char";
-          span.innerHTML = char === " " ? "&nbsp;" : char;
-          const delay = initialDelay + lineIndex * line.length * charDelay + charIndex * charDelay;
+          span.innerHTML = unit === "" ? "&nbsp;" : unit;
+          const delay = initialDelay + lineIndex * units.length * charDelay + unitIndex * charDelay;
           span.style.transitionDelay = delay + "ms";
           lineSpan.appendChild(span);
+
+          // Re-insert a real space between words so text wraps/reads normally
+          if (isShapedScript && unitIndex < units.length - 1) {
+            lineSpan.appendChild(document.createTextNode(" "));
+          }
         });
+
         heading.appendChild(lineSpan);
       });
 
