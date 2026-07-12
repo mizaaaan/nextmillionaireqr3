@@ -16,57 +16,17 @@
 
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Noto+Sans+Bengali:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Hind+Siliguri:wght@400;500;600;700&family=Markazi+Text:wght@400;500;600;700&display=swap" rel="stylesheet">
 
   <style>
     /* Full CSS copied from original index.html with an explicit #contact override
        so the contact section renders correctly as a standalone page. */
-    /* === NM dark mode === */
-    :root {
-      --page-bg: #ffffff;
-      --section-accent: #54C2FE;
-      --text: #1a1a1a;
-      --muted: #666666;
-      --muted-a6: rgba(0, 0, 0, 0.6);
-      --muted-a65: rgba(0, 0, 0, 0.65);
-      --card-bg: #f8f9fa;
-      --card-bg-alt: #f5f5f5;
-      --card-bg-hover: #ffffff;
-      --card-border: #e0e0e0;
-    }
-    html[data-theme="dark"] {
-      --page-bg: #14171d;
-      --section-accent: #0f3049;
-      --text: #eef0f3;
-      --muted: #98a1ad;
-      --muted-a6: rgba(255, 255, 255, 0.62);
-      --muted-a65: rgba(255, 255, 255, 0.68);
-      --card-bg: #1b1f28;
-      --card-bg-alt: #1b1f28;
-      --card-bg-hover: #222834;
-      --card-border: rgba(255, 255, 255, 0.12);
-      color-scheme: dark;
-    }
-    html[data-theme="dark"] .member-contact { color: #6fcbff; }
-    .theme-toggle {
-      border: 1px solid rgba(255,255,255,0.4);
-      background: rgba(255,255,255,0.1);
-      color: inherit;
-      font-size: 14px;
-      padding: 6px 12px;
-      border-radius: 20px;
-      cursor: pointer;
-      transition: all 0.3s ease;
-      line-height: 1;
-    }
-    .theme-toggle:hover { background: rgba(255,255,255,0.25); }
-    
     * { margin: 0; padding: 0; box-sizing: border-box; }
     html { scroll-behavior: smooth; }
     body {
       font-family: 'Inter', sans-serif;
-      background: var(--page-bg);
-      color: var(--text);
+      background: #fff;
+      color: #1a1a1a;
       overflow-x: hidden;
       -webkit-font-smoothing: antialiased;
       -moz-osx-font-smoothing: grayscale;
@@ -391,7 +351,7 @@
     }
     .stat-label {
       font-size: 12px;
-      color: var(--muted);
+      color: #666;
       text-transform: uppercase;
       letter-spacing: 0.05em;
     }
@@ -402,24 +362,24 @@
       gap: 32px;
     }
     .member-card {
-      background: var(--card-bg);
+      background: #f8f9fa;
       padding: 36px;
       border-radius: 16px;
-      border: 1px solid var(--card-border);
+      border: 1px solid #e0e0e0;
       transition: all 0.3s ease;
     }
     .member-card:hover {
-      background: var(--card-bg-hover);
+      background: #fff;
       border-color: #54C2FE;
       transform: translateY(-4px);
       box-shadow: 0 8px 24px rgba(84, 194, 254, 0.15);
     }
     #management .member-card {
-      background: var(--page-bg);
-      border-color: var(--card-border);
+      background: #fff;
+      border-color: #e0e0e0;
     }
     #management .member-card:hover {
-      background: var(--card-bg-hover);
+      background: #fff;
       border-color: #54C2FE;
     }
     .avatar {
@@ -453,19 +413,19 @@
     }
     .member-role {
       font-size: 13px;
-      color: var(--text);
+      color: #000;
       text-transform: uppercase;
       letter-spacing: 0.05em;
       margin-bottom: 14px;
     }
     #management .member-role {
-      color: var(--text);
+      color: #000;
     }
     #management .member-name {
-      color: var(--text);
+      color: #1a1a1a;
     }
     #management .muted {
-      color: var(--muted);
+      color: #555;
     }
     .member-contact {
       font-size: 12px;
@@ -483,14 +443,14 @@
       gap: 24px;
     }
     .gallery-card, .value-card {
-      background: var(--card-bg);
+      background: #f8f9fa;
       padding: 32px;
       border-radius: 12px;
-      border: 1px solid var(--card-border);
+      border: 1px solid #e0e0e0;
       transition: all 0.3s ease;
     }
     .gallery-card:hover, .value-card:hover {
-      background: var(--card-bg-hover);
+      background: #fff;
       border-color: #54C2FE;
       transform: translateY(-4px);
       box-shadow: 0 8px 24px rgba(84, 194, 254, 0.15);
@@ -510,16 +470,16 @@
       max-width: 100%;
     }
     .value-card {
-      background: var(--card-bg-alt);
+      background: #f5f5f5;
       padding: 32px;
       border-radius: 16px;
-      border: 1px solid var(--card-border);
+      border: 1px solid #e0e0e0;
       transition: all 0.3s ease;
       display: flex;
       flex-direction: column;
     }
     .value-card:hover {
-      background: var(--card-bg-hover);
+      background: #fff;
       border-color: #54C2FE;
       transform: translateY(-4px);
       box-shadow: 0 8px 24px rgba(84, 194, 254, 0.15);
@@ -532,10 +492,10 @@
       margin-bottom: 40px;
     }
     .contact-item {
-      background: var(--card-bg);
+      background: #f8f9fa;
       padding: 24px;
       border-radius: 12px;
-      border: 1px solid var(--card-border);
+      border: 1px solid #e0e0e0;
     }
     .contact-label {
       font-size: 12px;
@@ -550,7 +510,7 @@
     }
 
     footer {
-      background: var(--section-accent);
+      background: #54C2FE;
       border-top: 1px solid rgba(255, 255, 255, 0.2);
       padding: 32px 24px;
       color: #fff;
@@ -628,25 +588,70 @@
       .member-card { padding: 20px; }
       .member-name { font-size: 16px; }
     }
-  /* === NM i18n toggle === */
-  .lang-toggle {
-    border: 1px solid rgba(255,255,255,0.4);
-    background: rgba(255,255,255,0.1);
-    color: inherit;
-    font-size: 13px;
-    font-weight: 600;
-    padding: 6px 14px;
-    border-radius: 20px;
-    cursor: pointer;
-    transition: all 0.3s ease;
-    font-family: 'Noto Sans Bengali', 'Inter', sans-serif;
-    white-space: nowrap;
-  }
-  .lang-toggle:hover { background: rgba(255,255,255,0.25); }
-  html[lang="bn"] body, html[lang="bn"] * {
-    font-family: 'Noto Sans Bengali', 'Inter', sans-serif;
-  }
   
+    /* ============ Language switcher & i18n ============ */
+    .lang-switch {
+      display: flex;
+      align-items: center;
+      gap: 4px;
+      margin-left: 10px;
+      padding-left: 10px;
+      border-left: 1px solid rgba(255, 255, 255, 0.25);
+    }
+    .lang-switch button {
+      background: transparent;
+      border: 1px solid rgba(255, 255, 255, 0.3);
+      color: rgba(255, 255, 255, 0.85);
+      font-size: 12px;
+      font-weight: 600;
+      padding: 5px 10px;
+      border-radius: 999px;
+      cursor: pointer;
+      transition: all 0.25s ease;
+      font-family: 'Inter', sans-serif;
+    }
+    .lang-switch button:hover {
+      border-color: #fff;
+      color: #fff;
+    }
+    .lang-switch button.active {
+      background: #fff;
+      color: #1a1a1a;
+      border-color: #fff;
+    }
+    .mobile-menu .lang-switch {
+      margin: 12px 24px 4px;
+      padding-left: 0;
+      padding-top: 16px;
+      border-left: none;
+      border-top: 1px solid rgba(255, 255, 255, 0.15);
+    }
+
+    /* Bangla / Arabic type */
+    body.lang-bn { font-family: 'Hind Siliguri', 'Inter', sans-serif; }
+    body.lang-ar { font-family: 'Markazi Text', 'Inter', sans-serif; }
+
+    /* RTL adjustments (Arabic) */
+    html[dir="rtl"] .lang-switch {
+      margin-left: 0;
+      margin-right: 10px;
+      padding-left: 0;
+      padding-right: 10px;
+      border-left: none;
+      border-right: 1px solid rgba(255, 255, 255, 0.25);
+    }
+    html[dir="rtl"] .mobile-menu a { border-left: none; border-right: 3px solid transparent; }
+    html[dir="rtl"] .mobile-menu a:hover { border-left-color: transparent; border-right-color: #667eea; }
+    html[dir="rtl"] .eyebrow,
+    html[dir="rtl"] .section-head,
+    html[dir="rtl"] .fleet-head { text-align: right; }
+    html[dir="rtl"] .driver-step,
+    html[dir="rtl"] .value-card,
+    html[dir="rtl"] .gallery-card,
+    html[dir="rtl"] .member-card,
+    html[dir="rtl"] .contact-item,
+    html[dir="rtl"] .glass-card { text-align: right; }
+    html[dir="rtl"] .fleet-info { flex-direction: row-reverse; }
   </style>
 </head>
 <body>
@@ -660,37 +665,35 @@
         <nav class="navbar liquid-glass">
           <a href="index.html" class="logo">Next Millionaire</a>
           <div class="nav-links">
-            <a href="about.html" data-bn="সম্পর্কে">About</a>
-            <a href="gallery.html" data-bn="গ্যালারি">Gallery</a>
-            <a href="team.html" data-bn="টিম">Team</a>
-            <a href="values.html" data-bn="মূল্যবোধ">Values</a>
-            <a href="contact.html" data-bn="যোগাযোগ">Contact</a>
-            <button class="lang-toggle" onclick="toggleLang()">বাং</button>
-            <button class="theme-toggle" onclick="toggleTheme()" aria-label="Toggle dark mode">🌙</button>
+            <a href="about.html" data-i18n="nav.about">About</a>
+            <a href="gallery.html" data-i18n="nav.gallery">Gallery</a>
+            <a href="team.html" data-i18n="nav.team">Team</a>
+            <a href="values.html" data-i18n="nav.values">Values</a>
+            <a href="contact.html" data-i18n="nav.contact">Contact</a>
+            <div class="lang-switch"><button data-lang-btn="en" class="active">EN</button><button data-lang-btn="bn">বাং</button><button data-lang-btn="ar">عربي</button></div>
           </div>
           <button class="hamburger" id="hamburgerBtn">
             <span></span><span></span><span></span>
           </button>
         </nav>
         <div class="mobile-menu" id="mobileMenu">
-          <a href="about.html" data-bn="সম্পর্কে">About</a>
-          <a href="gallery.html" data-bn="গ্যালারি">Gallery</a>
-          <a href="team.html" data-bn="টিম">Team</a>
-          <a href="values.html" data-bn="মূল্যবোধ">Values</a>
-          <a href="contact.html" data-bn="যোগাযোগ">Contact</a>
-          <button class="lang-toggle" onclick="toggleLang()" style="margin:8px 24px; width:calc(100% - 48px);">বাং</button>
-          <button class="theme-toggle theme-toggle-labeled" onclick="toggleTheme()" style="margin:0 24px 8px; width:calc(100% - 48px);" aria-label="Toggle dark mode">🌙 Dark Mode</button>
+          <a href="about.html" data-i18n="nav.about">About</a>
+          <a href="gallery.html" data-i18n="nav.gallery">Gallery</a>
+          <a href="team.html" data-i18n="nav.team">Team</a>
+          <a href="values.html" data-i18n="nav.values">Values</a>
+          <a href="contact.html" data-i18n="nav.contact">Contact</a>
+          <div class="lang-switch"><button data-lang-btn="en" class="active">EN</button><button data-lang-btn="bn">বাং</button><button data-lang-btn="ar">عربي</button></div>
         </div>
       </div>
       <div class="hero-bottom">
         <div class="hero-grid">
           <div>
-            <div class="eyebrow" data-bn="যোগাযোগ করুন">Get in Touch</div>
-            <h1 data-bn="আমাদের সাথে যোগাযোগ করুন">Contact Us</h1>
-            <p class="subheading" data-bn="প্রশ্ন, অংশীদারিত্ব, অথবা সদস্যপদ সংক্রান্ত জিজ্ঞাসা — আমরা আপনার কথা শুনতে চাই।">Questions, partnerships, or membership inquiries — we’d love to hear from you.</p>
+            <div class="eyebrow" data-i18n="hero.eyebrow">Get in Touch</div>
+            <h1 data-i18n="hero.title">Contact Us</h1>
+            <p class="subheading" data-i18n="hero.subtitle">Questions, partnerships, or membership inquiries — we’d love to hear from you.</p>
             <div class="buttons" id="buttons">
-              <a href="about.html" class="btn-primary" data-bn="আমাদের গল্প">Our Story</a>
-              <a href="team.html" class="btn-secondary liquid-glass" data-bn="টিমের সাথে দেখা করুন">Meet the Team</a>
+              <a href="about.html" class="btn-primary" data-i18n="hero.btn1">Our Story</a>
+              <a href="team.html" class="btn-secondary liquid-glass" data-i18n="hero.btn2">Meet the Team</a>
             </div>
           </div>
         </div>
@@ -701,30 +704,30 @@
   <section class="content-section" id="contact">
     <div class="container">
       <div class="section-head">
-        <p class="section-label contact-label" data-bn="যোগাযোগ">Contact</p>
-        <h2 class="section-title" data-bn="যোগাযোগ করুন">Reach Out</h2>
-        <p class="muted" data-bn="সদস্যপদ, কর্মসূচি এবং অংশীদারিত্ব সম্পর্কিত প্রশ্নের উত্তর দিতে আমরা এখানে আছি।">We're here to answer questions about membership, programs, and partnerships.</p>
+        <p class="section-label contact-label" data-i18n="contact.label">Contact</p>
+        <h2 class="section-title" data-i18n="contact.title">Reach Out</h2>
+        <p class="muted" data-i18n="contact.subtitle">We're here to answer questions about membership, programs, and partnerships.</p>
       </div>
 
       <div class="contact-grid">
         <div class="contact-item liquid-glass">
-          <span class="contact-label" data-bn="অফিস">Office</span>
+          <span class="contact-label" data-i18n="c.office">Office</span>
           <div class="contact-value">Next Millionaire, Al Funduq Street, <br> West Bay, Doha, Qatar</div>
         </div>
         <div class="contact-item liquid-glass">
-          <span class="contact-label" data-bn="ইমেইল">Email</span>
+          <span class="contact-label" data-i18n="c.email">Email</span>
           <div class="contact-value">info@nextmillionaireqr.com <br> join@nextmillionaireqr.com</div>
         </div>
         <div class="contact-item liquid-glass">
-          <span class="contact-label" data-bn="ফোন">Phone</span>
+          <span class="contact-label" data-i18n="c.phone">Phone</span>
           <div class="contact-value">+880 1912-142028 <br> +880 1812-345678</div>
         </div>
       </div>
 
       <div style="max-width:720px; margin-top: 32px;">
-        <p class="muted" data-bn="লিখে জানাতে চান? উপরের ইমেইল ব্যবহার করুন অথবা অফিস সময়ে আমাদের অফিসে আসুন। আমরা ২ কার্যদিবসের মধ্যে সাড়া দেওয়ার চেষ্টা করি।">Prefer to write? Use the email above or visit our office during business hours. We aim to respond within 2 business days.</p>
+        <p class="muted" data-i18n="contact.para">Prefer to write? Use the email above or visit our office during business hours. We aim to respond within 2 business days.</p>
         <div style="margin-top:18px;">
-          <a class="btn-primary" href="mailto:info@nextmillionaireqr.com" data-bn="আমাদের ইমেইল করুন">Email Us</a>
+          <a class="btn-primary" href="mailto:info@nextmillionaireqr.com" data-i18n="contact.emailBtn">Email Us</a>
         </div> 
       </div>
     </div>
@@ -734,45 +737,62 @@
     <div class="footer-inner">
       <strong>Next Millionaire</strong>
       <span>© <span id="year"></span> Next Millionaire · Registration No. CO-4471/2010</span>
-      <span data-bn="আইসিএ সমবায় নীতিমালার প্রতি প্রতিশ্রুতিবদ্ধ">Committed to ICA Co-operative Principles</span>
+      <span data-i18n="footer.ica">Committed to ICA Co-operative Principles</span>
     </div>
   </footer>
 
   <script>
-    function nmApplyLang(lang) {
-      document.documentElement.lang = lang;
-      document.querySelectorAll('[data-bn]').forEach(function (el) {
-        if (el.dataset.enOrig === undefined) el.dataset.enOrig = el.innerHTML;
-        el.innerHTML = lang === 'bn' ? el.getAttribute('data-bn') : el.dataset.enOrig;
-      });
-      document.querySelectorAll('.lang-toggle').forEach(function (btn) {
-        btn.textContent = lang === 'bn' ? 'EN' : 'বাং';
-      });
-      localStorage.setItem('nm-lang', lang);
-    }
-    function toggleLang() {
-      const current = localStorage.getItem('nm-lang') || 'en';
-      nmApplyLang(current === 'en' ? 'bn' : 'en');
-    }
-    nmApplyLang(localStorage.getItem('nm-lang') || 'en');
+    window.translations = {
+      en: {
+        "nav.about": "About", "nav.gallery": "Gallery", "nav.team": "Team", "nav.values": "Values", "nav.contact": "Contact",
+        "hero.eyebrow": "Get in Touch",
+        "hero.title": "Contact Us",
+        "hero.subtitle": "Questions, partnerships, or membership inquiries — we’d love to hear from you.",
+        "hero.btn1": "Our Story",
+        "hero.btn2": "Meet the Team",
+        "contact.label": "Contact",
+        "contact.title": "Reach Out",
+        "contact.subtitle": "We're here to answer questions about membership, programs, and partnerships.",
+        "c.office": "Office", "c.email": "Email", "c.phone": "Phone",
+        "contact.para": "Prefer to write? Use the email above or visit our office during business hours. We aim to respond within 2 business days.",
+        "contact.emailBtn": "Email Us",
+        "footer.ica": "Committed to ICA Co-operative Principles"
+      },
+      bn: {
+        "nav.about": "আমাদের সম্পর্কে", "nav.gallery": "গ্যালারি", "nav.team": "টিম", "nav.values": "মূল্যবোধ", "nav.contact": "যোগাযোগ",
+        "hero.eyebrow": "যোগাযোগ করুন",
+        "hero.title": "আমাদের সাথে যোগাযোগ করুন",
+        "hero.subtitle": "প্রশ্ন, অংশীদারিত্ব অথবা সদস্যপদ সংক্রান্ত জিজ্ঞাসা — আমরা আপনার কথা শুনতে চাই।",
+        "hero.btn1": "আমাদের গল্প",
+        "hero.btn2": "টিমের সাথে পরিচিত হোন",
+        "contact.label": "যোগাযোগ",
+        "contact.title": "আমাদের কাছে পৌঁছান",
+        "contact.subtitle": "সদস্যপদ, কর্মসূচি এবং অংশীদারিত্ব সংক্রান্ত প্রশ্নের উত্তর দিতে আমরা প্রস্তুত।",
+        "c.office": "অফিস", "c.email": "ইমেইল", "c.phone": "ফোন",
+        "contact.para": "লিখে যোগাযোগ করতে চান? উপরের ইমেইল ব্যবহার করুন অথবা কর্মঘণ্টার মধ্যে আমাদের অফিসে আসুন। আমরা ২ কার্যদিবসের মধ্যে উত্তর দেওয়ার চেষ্টা করি।",
+        "contact.emailBtn": "ইমেইল করুন",
+        "footer.ica": "আইসিএ সমবায় নীতিমালার প্রতি প্রতিশ্রুতিবদ্ধ"
+      },
+      ar: {
+        "nav.about": "من نحن", "nav.gallery": "معرض الصور", "nav.team": "الفريق", "nav.values": "قيمنا", "nav.contact": "تواصل معنا",
+        "hero.eyebrow": "تواصل معنا",
+        "hero.title": "اتصل بنا",
+        "hero.subtitle": "أسئلة أو شراكات أو استفسارات حول العضوية — يسعدنا التواصل معك.",
+        "hero.btn1": "قصتنا",
+        "hero.btn2": "تعرف على الفريق",
+        "contact.label": "تواصل",
+        "contact.title": "راسلنا",
+        "contact.subtitle": "نحن هنا للإجابة عن أسئلتكم حول العضوية والبرامج والشراكات.",
+        "c.office": "المكتب", "c.email": "البريد الإلكتروني", "c.phone": "الهاتف",
+        "contact.para": "تفضل الكتابة؟ استخدم البريد الإلكتروني أعلاه أو قم بزيارة مكتبنا خلال ساعات العمل. نسعى للرد خلال يومي عمل.",
+        "contact.emailBtn": "راسلنا عبر البريد",
+        "footer.ica": "ملتزمون بمبادئ التحالف التعاوني الدولي (ICA)"
+      }
+    };
+  </script>
+  <script src="js/i18n.js"></script>
 
-    function nmApplyTheme(theme) {
-      document.documentElement.setAttribute('data-theme', theme);
-      var isDark = theme === 'dark';
-      document.querySelectorAll('.theme-toggle-labeled').forEach(function (btn) {
-        btn.textContent = isDark ? '🔆 Light Mode' : '🌙 Dark Mode';
-      });
-      document.querySelectorAll('.theme-toggle:not(.theme-toggle-labeled)').forEach(function (btn) {
-        btn.textContent = isDark ? '🔆' : '🌙';
-      });
-      localStorage.setItem('nm-theme', theme);
-    }
-    function toggleTheme() {
-      var current = localStorage.getItem('nm-theme') || 'light';
-      nmApplyTheme(current === 'light' ? 'dark' : 'light');
-    }
-    nmApplyTheme(localStorage.getItem('nm-theme') || 'light');
-
+  <script>
     // set year and mobile menu toggle
     document.getElementById('year').textContent = new Date().getFullYear();
     const hb = document.getElementById('hamburgerBtn');

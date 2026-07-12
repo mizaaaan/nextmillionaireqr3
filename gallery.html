@@ -16,56 +16,16 @@
 
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Noto+Sans+Bengali:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Hind+Siliguri:wght@400;500;600;700&family=Markazi+Text:wght@400;500;600;700&display=swap" rel="stylesheet">
 
   <style>
     /* Entire CSS copied verbatim from the uploaded index.html to preserve design */
-    /* === NM dark mode === */
-    :root {
-      --page-bg: #ffffff;
-      --section-accent: #54C2FE;
-      --text: #1a1a1a;
-      --muted: #666666;
-      --muted-a6: rgba(0, 0, 0, 0.6);
-      --muted-a65: rgba(0, 0, 0, 0.65);
-      --card-bg: #f8f9fa;
-      --card-bg-alt: #f5f5f5;
-      --card-bg-hover: #ffffff;
-      --card-border: #e0e0e0;
-    }
-    html[data-theme="dark"] {
-      --page-bg: #14171d;
-      --section-accent: #0f3049;
-      --text: #eef0f3;
-      --muted: #98a1ad;
-      --muted-a6: rgba(255, 255, 255, 0.62);
-      --muted-a65: rgba(255, 255, 255, 0.68);
-      --card-bg: #1b1f28;
-      --card-bg-alt: #1b1f28;
-      --card-bg-hover: #222834;
-      --card-border: rgba(255, 255, 255, 0.12);
-      color-scheme: dark;
-    }
-    html[data-theme="dark"] .member-contact { color: #6fcbff; }
-    .theme-toggle {
-      border: 1px solid rgba(255,255,255,0.4);
-      background: rgba(255,255,255,0.1);
-      color: inherit;
-      font-size: 14px;
-      padding: 6px 12px;
-      border-radius: 20px;
-      cursor: pointer;
-      transition: all 0.3s ease;
-      line-height: 1;
-    }
-    .theme-toggle:hover { background: rgba(255,255,255,0.25); }
-    
     * { margin: 0; padding: 0; box-sizing: border-box; }
     html { scroll-behavior: smooth; }
     body {
       font-family: 'Inter', sans-serif;
-      background: var(--page-bg);
-      color: var(--text);
+      background: #fff;
+      color: #1a1a1a;
       overflow-x: hidden;
       -webkit-font-smoothing: antialiased;
       -moz-osx-font-smoothing: grayscale;
@@ -330,43 +290,43 @@
 
     .content-section {
       padding: 80px 24px;
-      background: var(--page-bg);
+      background: #fff;
     }
     #values {
       padding-top: 40px;
     }
     .content-section:nth-of-type(1) {
-      background: var(--section-accent);
+      background: #54C2FE;
       color: #fff;
     }
     .content-section:nth-of-type(2) {
-      background: var(--page-bg);
-      color: var(--text);
+      background: #fff;
+      color: #1a1a1a;
     }
     .content-section:nth-of-type(3) {
-      background: var(--section-accent);
+      background: #54C2FE;
       color: #fff;
     }
     .content-section:nth-of-type(4) {
-      background: var(--page-bg);
-      color: var(--text);
+      background: #fff;
+      color: #1a1a1a;
     }
     .content-section:nth-of-type(5) {
-      background: var(--page-bg);
-      color: var(--text);
+      background: #fff;
+      color: #1a1a1a;
     }
     .content-section:nth-of-type(6) {
-      background: var(--section-accent);
+      background: #54C2FE;
       color: #fff;
     }
     .content-section:nth-of-type(n+2):nth-of-type(even) .section-label {
-      color: var(--muted-a6);
+      color: rgba(0, 0, 0, 0.6);
     }
     .content-section:nth-of-type(n+2):nth-of-type(even) .section-title {
-      color: var(--text);
+      color: #1a1a1a;
     }
     .content-section:nth-of-type(n+2):nth-of-type(even) .muted {
-      color: var(--muted-a65);
+      color: rgba(0, 0, 0, 0.65);
     }
     .content-section:nth-of-type(n+2):nth-of-type(odd) .section-label {
       color: rgba(255, 255, 255, 0.8);
@@ -410,7 +370,7 @@
     }
     .stat-label {
       font-size: 12px;
-      color: var(--muted);
+      color: #666;
       text-transform: uppercase;
       letter-spacing: 0.05em;
     }
@@ -421,24 +381,24 @@
       gap: 32px;
     }
     .member-card {
-      background: var(--card-bg);
+      background: #f8f9fa;
       padding: 36px;
       border-radius: 16px;
-      border: 1px solid var(--card-border);
+      border: 1px solid #e0e0e0;
       transition: all 0.3s ease;
     }
     .member-card:hover {
-      background: var(--card-bg-hover);
+      background: #fff;
       border-color: #54C2FE;
       transform: translateY(-4px);
       box-shadow: 0 8px 24px rgba(84, 194, 254, 0.15);
     }
     #management .member-card {
-      background: var(--page-bg);
-      border-color: var(--card-border);
+      background: #fff;
+      border-color: #e0e0e0;
     }
     #management .member-card:hover {
-      background: var(--card-bg-hover);
+      background: #fff;
       border-color: #54C2FE;
     }
     .avatar {
@@ -472,19 +432,19 @@
     }
     .member-role {
       font-size: 13px;
-      color: var(--text);
+      color: #000;
       text-transform: uppercase;
       letter-spacing: 0.05em;
       margin-bottom: 14px;
     }
     #management .member-role {
-      color: var(--text);
+      color: #000;
     }
     #management .member-name {
-      color: var(--text);
+      color: #1a1a1a;
     }
     #management .muted {
-      color: var(--muted);
+      color: #555;
     }
     .member-contact {
       font-size: 12px;
@@ -502,14 +462,14 @@
       gap: 24px;
     }
     .gallery-card, .value-card {
-      background: var(--card-bg);
+      background: #f8f9fa;
       padding: 32px;
       border-radius: 12px;
-      border: 1px solid var(--card-border);
+      border: 1px solid #e0e0e0;
       transition: all 0.3s ease;
     }
     .gallery-card:hover, .value-card:hover {
-      background: var(--card-bg-hover);
+      background: #fff;
       border-color: #54C2FE;
       transform: translateY(-4px);
       box-shadow: 0 8px 24px rgba(84, 194, 254, 0.15);
@@ -536,13 +496,13 @@
       color: inherit;
     }
     .content-section:nth-of-type(5) .value-card {
-      color: var(--text);
+      color: #1a1a1a;
     }
     .content-section:nth-of-type(5) .value-card .muted {
-      color: var(--muted);
+      color: #555;
     }
     .content-section:nth-of-type(5) .value-title {
-      color: var(--text);
+      color: #1a1a1a;
     }
 
     #values .section-label {
@@ -596,16 +556,16 @@
       max-width: 100%;
     }
     .value-card {
-      background: var(--card-bg-alt);
+      background: #f5f5f5;
       padding: 32px;
       border-radius: 16px;
-      border: 1px solid var(--card-border);
+      border: 1px solid #e0e0e0;
       transition: all 0.3s ease;
       display: flex;
       flex-direction: column;
     }
     .value-card:hover {
-      background: var(--card-bg-hover);
+      background: #fff;
       border-color: #54C2FE;
       transform: translateY(-4px);
       box-shadow: 0 8px 24px rgba(84, 194, 254, 0.15);
@@ -618,10 +578,10 @@
       margin-bottom: 40px;
     }
     .contact-item {
-      background: var(--card-bg);
+      background: #f8f9fa;
       padding: 24px;
       border-radius: 12px;
-      border: 1px solid var(--card-border);
+      border: 1px solid #e0e0e0;
     }
     .contact-label {
       font-size: 12px;
@@ -636,7 +596,7 @@
     }
 
     footer {
-      background: var(--section-accent);
+      background: #54C2FE;
       border-top: 1px solid rgba(255, 255, 255, 0.2);
       padding: 32px 24px;
       color: #fff;
@@ -714,25 +674,70 @@
       .member-card { padding: 20px; }
       .member-name { font-size: 16px; }
     }
-  /* === NM i18n toggle === */
-  .lang-toggle {
-    border: 1px solid rgba(255,255,255,0.4);
-    background: rgba(255,255,255,0.1);
-    color: inherit;
-    font-size: 13px;
-    font-weight: 600;
-    padding: 6px 14px;
-    border-radius: 20px;
-    cursor: pointer;
-    transition: all 0.3s ease;
-    font-family: 'Noto Sans Bengali', 'Inter', sans-serif;
-    white-space: nowrap;
-  }
-  .lang-toggle:hover { background: rgba(255,255,255,0.25); }
-  html[lang="bn"] body, html[lang="bn"] * {
-    font-family: 'Noto Sans Bengali', 'Inter', sans-serif;
-  }
   
+    /* ============ Language switcher & i18n ============ */
+    .lang-switch {
+      display: flex;
+      align-items: center;
+      gap: 4px;
+      margin-left: 10px;
+      padding-left: 10px;
+      border-left: 1px solid rgba(255, 255, 255, 0.25);
+    }
+    .lang-switch button {
+      background: transparent;
+      border: 1px solid rgba(255, 255, 255, 0.3);
+      color: rgba(255, 255, 255, 0.85);
+      font-size: 12px;
+      font-weight: 600;
+      padding: 5px 10px;
+      border-radius: 999px;
+      cursor: pointer;
+      transition: all 0.25s ease;
+      font-family: 'Inter', sans-serif;
+    }
+    .lang-switch button:hover {
+      border-color: #fff;
+      color: #fff;
+    }
+    .lang-switch button.active {
+      background: #fff;
+      color: #1a1a1a;
+      border-color: #fff;
+    }
+    .mobile-menu .lang-switch {
+      margin: 12px 24px 4px;
+      padding-left: 0;
+      padding-top: 16px;
+      border-left: none;
+      border-top: 1px solid rgba(255, 255, 255, 0.15);
+    }
+
+    /* Bangla / Arabic type */
+    body.lang-bn { font-family: 'Hind Siliguri', 'Inter', sans-serif; }
+    body.lang-ar { font-family: 'Markazi Text', 'Inter', sans-serif; }
+
+    /* RTL adjustments (Arabic) */
+    html[dir="rtl"] .lang-switch {
+      margin-left: 0;
+      margin-right: 10px;
+      padding-left: 0;
+      padding-right: 10px;
+      border-left: none;
+      border-right: 1px solid rgba(255, 255, 255, 0.25);
+    }
+    html[dir="rtl"] .mobile-menu a { border-left: none; border-right: 3px solid transparent; }
+    html[dir="rtl"] .mobile-menu a:hover { border-left-color: transparent; border-right-color: #667eea; }
+    html[dir="rtl"] .eyebrow,
+    html[dir="rtl"] .section-head,
+    html[dir="rtl"] .fleet-head { text-align: right; }
+    html[dir="rtl"] .driver-step,
+    html[dir="rtl"] .value-card,
+    html[dir="rtl"] .gallery-card,
+    html[dir="rtl"] .member-card,
+    html[dir="rtl"] .contact-item,
+    html[dir="rtl"] .glass-card { text-align: right; }
+    html[dir="rtl"] .fleet-info { flex-direction: row-reverse; }
   </style>
 </head>
 <body>
@@ -746,37 +751,35 @@
         <nav class="navbar liquid-glass">
           <a href="index.html" class="logo">Next Millionaire</a>
           <div class="nav-links">
-            <a href="about.html" data-bn="সম্পর্কে">About</a>
-            <a href="gallery.html" data-bn="গ্যালারি">Gallery</a>
-            <a href="team.html" data-bn="টিম">Team</a>
-            <a href="values.html" data-bn="মূল্যবোধ">Values</a>
-            <a href="contact.html" data-bn="যোগাযোগ">Contact</a>
-            <button class="lang-toggle" onclick="toggleLang()">বাং</button>
-            <button class="theme-toggle" onclick="toggleTheme()" aria-label="Toggle dark mode">🌙</button>
+            <a href="about.html" data-i18n="nav.about">About</a>
+            <a href="gallery.html" data-i18n="nav.gallery">Gallery</a>
+            <a href="team.html" data-i18n="nav.team">Team</a>
+            <a href="values.html" data-i18n="nav.values">Values</a>
+            <a href="contact.html" data-i18n="nav.contact">Contact</a>
+            <div class="lang-switch"><button data-lang-btn="en" class="active">EN</button><button data-lang-btn="bn">বাং</button><button data-lang-btn="ar">عربي</button></div>
           </div>
           <button class="hamburger" id="hamburgerBtn">
             <span></span><span></span><span></span>
           </button>
         </nav>
         <div class="mobile-menu" id="mobileMenu">
-          <a href="about.html" data-bn="সম্পর্কে">About</a>
-          <a href="gallery.html" data-bn="গ্যালারি">Gallery</a>
-          <a href="team.html" data-bn="টিম">Team</a>
-          <a href="values.html" data-bn="মূল্যবোধ">Values</a>
-          <a href="contact.html" data-bn="যোগাযোগ">Contact</a>
-          <button class="lang-toggle" onclick="toggleLang()" style="margin:8px 24px; width:calc(100% - 48px);">বাং</button>
-          <button class="theme-toggle theme-toggle-labeled" onclick="toggleTheme()" style="margin:0 24px 8px; width:calc(100% - 48px);" aria-label="Toggle dark mode">🌙 Dark Mode</button>
+          <a href="about.html" data-i18n="nav.about">About</a>
+          <a href="gallery.html" data-i18n="nav.gallery">Gallery</a>
+          <a href="team.html" data-i18n="nav.team">Team</a>
+          <a href="values.html" data-i18n="nav.values">Values</a>
+          <a href="contact.html" data-i18n="nav.contact">Contact</a>
+          <div class="lang-switch"><button data-lang-btn="en" class="active">EN</button><button data-lang-btn="bn">বাং</button><button data-lang-btn="ar">عربي</button></div>
         </div>
       </div>
       <div class="hero-bottom">
         <div class="hero-grid">
           <div>
-            <div class="eyebrow" data-bn="আমাদের কাজ বাস্তবে">Our Work in Action</div>
-            <h1 data-bn="প্রোগ্রাম ও প্রভাব গ্যালারি">Programs & Impact Gallery</h1>
-            <p class="subheading" data-bn="দেখুন কীভাবে আমাদের উদ্যোগগুলো অঞ্চলজুড়ে মানুষের জীবন ও সম্প্রদায়কে বদলে দিচ্ছে।">See how our initiatives are transforming lives and communities across the region.</p>
+            <div class="eyebrow" data-i18n="hero.eyebrow">Our Work in Action</div>
+            <h1 data-i18n="hero.title">Programs & Impact Gallery</h1>
+            <p class="subheading" data-i18n="hero.subtitle">See how our initiatives are transforming lives and communities across the region.</p>
             <div class="buttons" id="buttons">
-              <a href="team.html" class="btn-primary" data-bn="আমাদের টিমের সাথে দেখা করুন">Meet Our Team</a>
-              <a href="about.html" class="btn-secondary liquid-glass" data-bn="আমাদের গল্প">Our Story</a>
+              <a href="team.html" class="btn-primary" data-i18n="hero.btn1">Meet Our Team</a>
+              <a href="about.html" class="btn-secondary liquid-glass" data-i18n="hero.btn2">Our Story</a>
             </div>
           </div>
         </div>
@@ -787,17 +790,17 @@
   <section class="content-section" id="gallery">
     <div class="container">
       <div class="section-head">
-        <p class="section-label" data-bn="আমাদের কাজ বাস্তবে">Our Work in Action</p>
-        <h2 class="section-title" data-bn="প্রোগ্রাম ও প্রভাব গ্যালারি">Programs & Impact Gallery</h2>
-        <p class="muted" style="margin-top:14px;" data-bn="দেখুন কীভাবে আমাদের উদ্যোগগুলো অঞ্চলজুড়ে মানুষের জীবন ও সম্প্রদায়কে বদলে দিচ্ছে।">See how our initiatives are transforming lives and communities across the region.</p>
+        <p class="section-label" data-i18n="hero.eyebrow">Our Work in Action</p>
+        <h2 class="section-title" data-i18n="hero.title">Programs & Impact Gallery</h2>
+        <p class="muted" style="margin-top:14px;" data-i18n="hero.subtitle">See how our initiatives are transforming lives and communities across the region.</p>
       </div>
       <div class="gallery-grid">
-        <div class="gallery-card"><div class="icon">🌾</div><div class="gallery-title" data-bn="কৃষি প্রশিক্ষণ">Agricultural Training</div><p class="muted" data-bn="টেকসই কৃষি পদ্ধতি ও আধুনিক ফসল ব্যবস্থাপনা নিয়ে সদস্যদের শিক্ষা প্রদান।">Member education on sustainable farming techniques and modern crop management practices.</p></div>
-        <div class="gallery-card"><div class="icon">💼</div><div class="gallery-title" data-bn="ব্যবসায়িক দক্ষতা">Business Skills</div><p class="muted" data-bn="সমবায় সদস্যদের জন্য আর্থিক সাক্ষরতা, বাজার প্রবেশাধিকার ও উদ্যোক্তা কর্মশালা।">Financial literacy, market access, and entrepreneurship workshops for cooperative members.</p></div>
-        <div class="gallery-card"><div class="icon">👨‍👩‍👧‍👦</div><div class="gallery-title" data-bn="সম্প্রদায় সম্পৃক্তকরণ">Community Outreach</div><p class="muted" data-bn="টেকসই উন্নয়ন ও সামাজিক নেটওয়ার্ক গড়ে তুলতে গ্রামীণ সম্প্রদায়ের সাথে সম্পৃক্ততা।">Engaging with rural communities to build sustainable development and social networks.</p></div>
-        <div class="gallery-card"><div class="icon">📊</div><div class="gallery-title" data-bn="আর্থিক পরিকল্পনা">Financial Planning</div><p class="muted" data-bn="প্রবৃদ্ধি ও স্থিতিশীলতার জন্য সদস্যকেন্দ্রিক আর্থিক সেবা ও ক্ষুদ্রঋণ উদ্যোগ।">Member-focused financial services and microfinance initiatives for growth and stability.</p></div>
-        <div class="gallery-card"><div class="icon">🌿</div><div class="gallery-title" data-bn="টেকসই উদ্যোগ">Sustainability Initiatives</div><p class="muted" data-bn="সদস্যদের খামারজুড়ে পরিবেশ সংরক্ষণ কর্মসূচি ও জৈব কৃষি প্রসার।">Environmental conservation programs and organic farming promotion across member farms.</p></div>
-        <div class="gallery-card"><div class="icon">🏆</div><div class="gallery-title" data-bn="সদস্যদের সাফল্যগাথা">Member Success Stories</div><p class="muted" data-bn="আমাদের নিবেদিতপ্রাণ সমবায় সদস্যদের অর্জন ও মাইলফলক উদযাপন।">Celebrating the achievements and milestones reached by our dedicated cooperative members.</p></div>
+        <div class="gallery-card"><div class="icon">🌾</div><div class="gallery-title" data-i18n="g1.t">Agricultural Training</div><p class="muted" data-i18n="g1.d">Member education on sustainable farming techniques and modern crop management practices.</p></div>
+        <div class="gallery-card"><div class="icon">💼</div><div class="gallery-title" data-i18n="g2.t">Business Skills</div><p class="muted" data-i18n="g2.d">Financial literacy, market access, and entrepreneurship workshops for cooperative members.</p></div>
+        <div class="gallery-card"><div class="icon">👨‍👩‍👧‍👦</div><div class="gallery-title" data-i18n="g3.t">Community Outreach</div><p class="muted" data-i18n="g3.d">Engaging with rural communities to build sustainable development and social networks.</p></div>
+        <div class="gallery-card"><div class="icon">📊</div><div class="gallery-title" data-i18n="g4.t">Financial Planning</div><p class="muted" data-i18n="g4.d">Member-focused financial services and microfinance initiatives for growth and stability.</p></div>
+        <div class="gallery-card"><div class="icon">🌿</div><div class="gallery-title" data-i18n="g5.t">Sustainability Initiatives</div><p class="muted" data-i18n="g5.d">Environmental conservation programs and organic farming promotion across member farms.</p></div>
+        <div class="gallery-card"><div class="icon">🏆</div><div class="gallery-title" data-i18n="g6.t">Member Success Stories</div><p class="muted" data-i18n="g6.d">Celebrating the achievements and milestones reached by our dedicated cooperative members.</p></div>
       </div>
     </div>
   </section>
@@ -805,46 +808,63 @@
   <footer>
     <div class="footer-inner">
       <strong>Next Millionaire</strong>
-      <div data-bn="অংশীদারি মালিকানার মাধ্যমে সম্প্রদায়ের সম্পদ গড়ে তোলা।">Building community wealth through shared ownership.</div>
+      <div data-i18n="footer.tagline">Building community wealth through shared ownership.</div>
       <div>© <span id="year"></span> Next Millionaire </div>
     </div>
   </footer>
 
   <script>
-    function nmApplyLang(lang) {
-      document.documentElement.lang = lang;
-      document.querySelectorAll('[data-bn]').forEach(function (el) {
-        if (el.dataset.enOrig === undefined) el.dataset.enOrig = el.innerHTML;
-        el.innerHTML = lang === 'bn' ? el.getAttribute('data-bn') : el.dataset.enOrig;
-      });
-      document.querySelectorAll('.lang-toggle').forEach(function (btn) {
-        btn.textContent = lang === 'bn' ? 'EN' : 'বাং';
-      });
-      localStorage.setItem('nm-lang', lang);
-    }
-    function toggleLang() {
-      const current = localStorage.getItem('nm-lang') || 'en';
-      nmApplyLang(current === 'en' ? 'bn' : 'en');
-    }
-    nmApplyLang(localStorage.getItem('nm-lang') || 'en');
+    window.translations = {
+      en: {
+        "nav.about": "About", "nav.gallery": "Gallery", "nav.team": "Team", "nav.values": "Values", "nav.contact": "Contact",
+        "hero.eyebrow": "Our Work in Action",
+        "hero.title": "Programs &amp; Impact Gallery",
+        "hero.subtitle": "See how our initiatives are transforming lives and communities across the region.",
+        "hero.btn1": "Meet Our Team",
+        "hero.btn2": "Our Story",
+        "g1.t": "Agricultural Training", "g1.d": "Member education on sustainable farming techniques and modern crop management practices.",
+        "g2.t": "Business Skills", "g2.d": "Financial literacy, market access, and entrepreneurship workshops for cooperative members.",
+        "g3.t": "Community Outreach", "g3.d": "Engaging with rural communities to build sustainable development and social networks.",
+        "g4.t": "Financial Planning", "g4.d": "Member-focused financial services and microfinance initiatives for growth and stability.",
+        "g5.t": "Sustainability Initiatives", "g5.d": "Environmental conservation programs and organic farming promotion across member farms.",
+        "g6.t": "Member Success Stories", "g6.d": "Celebrating the achievements and milestones reached by our dedicated cooperative members.",
+        "footer.tagline": "Building community wealth through shared ownership."
+      },
+      bn: {
+        "nav.about": "আমাদের সম্পর্কে", "nav.gallery": "গ্যালারি", "nav.team": "টিম", "nav.values": "মূল্যবোধ", "nav.contact": "যোগাযোগ",
+        "hero.eyebrow": "আমাদের কর্মকাণ্ড",
+        "hero.title": "কর্মসূচি ও প্রভাবের গ্যালারি",
+        "hero.subtitle": "দেখুন কীভাবে আমাদের উদ্যোগ পুরো অঞ্চল জুড়ে মানুষের জীবন ও সম্প্রদায়কে বদলে দিচ্ছে।",
+        "hero.btn1": "আমাদের টিমের সাথে পরিচিত হোন",
+        "hero.btn2": "আমাদের গল্প",
+        "g1.t": "কৃষি প্রশিক্ষণ", "g1.d": "টেকসই কৃষি কৌশল ও আধুনিক ফসল ব্যবস্থাপনা বিষয়ে সদস্যদের প্রশিক্ষণ।",
+        "g2.t": "ব্যবসায়িক দক্ষতা", "g2.d": "সমবায় সদস্যদের জন্য আর্থিক সাক্ষরতা, বাজার সংযোগ এবং উদ্যোক্তা কর্মশালা।",
+        "g3.t": "সম্প্রদায়ের সাথে যোগাযোগ", "g3.d": "টেকসই উন্নয়ন ও সামাজিক নেটওয়ার্ক গড়তে গ্রামীণ সম্প্রদায়ের সাথে সম্পৃক্ততা।",
+        "g4.t": "আর্থিক পরিকল্পনা", "g4.d": "প্রবৃদ্ধি ও স্থিতিশীলতার জন্য সদস্যকেন্দ্রিক আর্থিক সেবা ও ক্ষুদ্রঋণ উদ্যোগ।",
+        "g5.t": "টেকসই উদ্যোগ", "g5.d": "সদস্যদের খামারজুড়ে পরিবেশ সংরক্ষণ কর্মসূচি ও জৈব কৃষির প্রসার।",
+        "g6.t": "সদস্যদের সাফল্যের গল্প", "g6.d": "আমাদের নিবেদিতপ্রাণ সমবায় সদস্যদের অর্জন ও মাইলফলক উদযাপন।",
+        "footer.tagline": "যৌথ মালিকানার মাধ্যমে সমষ্টিগত সম্পদ গড়ে তোলা।"
+      },
+      ar: {
+        "nav.about": "من نحن", "nav.gallery": "معرض الصور", "nav.team": "الفريق", "nav.values": "قيمنا", "nav.contact": "تواصل معنا",
+        "hero.eyebrow": "أعمالنا في الميدان",
+        "hero.title": "معرض البرامج والأثر",
+        "hero.subtitle": "شاهد كيف تُحدث مبادراتنا تحولًا في حياة الناس والمجتمعات في جميع أنحاء المنطقة.",
+        "hero.btn1": "تعرف على فريقنا",
+        "hero.btn2": "قصتنا",
+        "g1.t": "التدريب الزراعي", "g1.d": "تدريب الأعضاء على تقنيات الزراعة المستدامة وأساليب إدارة المحاصيل الحديثة.",
+        "g2.t": "المهارات التجارية", "g2.d": "ورش عمل حول المعرفة المالية والوصول إلى الأسواق وريادة الأعمال لأعضاء الجمعية.",
+        "g3.t": "التواصل المجتمعي", "g3.d": "التفاعل مع المجتمعات الريفية لبناء تنمية مستدامة وشبكات اجتماعية.",
+        "g4.t": "التخطيط المالي", "g4.d": "خدمات مالية تركز على الأعضاء ومبادرات التمويل الأصغر لتحقيق النمو والاستقرار.",
+        "g5.t": "مبادرات الاستدامة", "g5.d": "برامج للحفاظ على البيئة وتعزيز الزراعة العضوية في مزارع الأعضاء.",
+        "g6.t": "قصص نجاح الأعضاء", "g6.d": "الاحتفاء بإنجازات وأعضاء جمعيتنا المتفانين ومحطاتهم المهمة.",
+        "footer.tagline": "نبني ثروة المجتمع من خلال الملكية المشتركة."
+      }
+    };
+  </script>
+  <script src="js/i18n.js"></script>
 
-    function nmApplyTheme(theme) {
-      document.documentElement.setAttribute('data-theme', theme);
-      var isDark = theme === 'dark';
-      document.querySelectorAll('.theme-toggle-labeled').forEach(function (btn) {
-        btn.textContent = isDark ? '🔆 Light Mode' : '🌙 Dark Mode';
-      });
-      document.querySelectorAll('.theme-toggle:not(.theme-toggle-labeled)').forEach(function (btn) {
-        btn.textContent = isDark ? '🔆' : '🌙';
-      });
-      localStorage.setItem('nm-theme', theme);
-    }
-    function toggleTheme() {
-      var current = localStorage.getItem('nm-theme') || 'light';
-      nmApplyTheme(current === 'light' ? 'dark' : 'light');
-    }
-    nmApplyTheme(localStorage.getItem('nm-theme') || 'light');
-
+  <script>
     document.getElementById('year').textContent = new Date().getFullYear();
     const hb = document.getElementById('hamburgerBtn');
     const mm = document.getElementById('mobileMenu');
