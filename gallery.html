@@ -802,6 +802,28 @@
     html[data-theme="dark"] .fleet-card,
     html[data-theme="dark"] .driver-step { background: rgba(255, 255, 255, 0.04); border-color: rgba(255, 255, 255, 0.1); }
     html[data-theme="dark"] .fleet-status { color: rgba(255, 255, 255, 0.7); }
+    /* ---- ID-scoped overrides in the original CSS beat the generic dark
+       rules above (higher specificity), so they need their own dark
+       counterparts or text/cards stay dark-on-dark / light-on-light. ---- */
+    html[data-theme="dark"] #values .value-card { background: rgba(255, 255, 255, 0.035); border-color: rgba(255, 255, 255, 0.1); }
+    html[data-theme="dark"] #values .value-card:hover { background: rgba(255, 255, 255, 0.06); border-color: #54C2FE; }
+    html[data-theme="dark"] #values .section-label { color: rgba(255, 255, 255, 0.55); }
+    html[data-theme="dark"] #values .section-title { color: #f5f5f5; }
+    html[data-theme="dark"] #values .muted { color: rgba(255, 255, 255, 0.62); }
+    html[data-theme="dark"] #values .gallery-title,
+    html[data-theme="dark"] #values .value-title { color: #f5f5f5; }
+    html[data-theme="dark"] .content-section:nth-of-type(5) .value-card { color: #f5f5f5; }
+    html[data-theme="dark"] .content-section:nth-of-type(5) .value-card .muted { color: rgba(255, 255, 255, 0.62); }
+
+    html[data-theme="dark"] #contact .section-label { color: rgba(255, 255, 255, 0.8); }
+    html[data-theme="dark"] #contact .section-title { color: #fff; }
+    html[data-theme="dark"] #contact .muted { color: rgba(255, 255, 255, 0.85); }
+    html[data-theme="dark"] #contact .contact-label { color: rgba(255, 255, 255, 0.75); }
+    html[data-theme="dark"] #contact .contact-value { color: #fff; }
+    html[data-theme="dark"] #contact .contact-item { background: rgba(255, 255, 255, 0.1); border-color: rgba(255, 255, 255, 0.2); }
+    html[data-theme="dark"] #contact .btn-primary { background: #fff; color: #1a1a1a; border-color: transparent; }
+    html[data-theme="dark"] #contact .btn-primary:hover { background: transparent; color: #fff; border-color: #fff; }
+
 
     html[data-theme="dark"] .content-section:nth-of-type(1),
     html[data-theme="dark"] .content-section:nth-of-type(3),
